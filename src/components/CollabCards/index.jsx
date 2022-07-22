@@ -87,7 +87,7 @@ export default function CollabCard(props) {
         </CardContent>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
-        <CardContent>
+        <CardContent sx={{overflowY: "scroll", height:"450px"}} className="collab-card-content">
           <Typography fontWeight={500} paragraph>Status</Typography>
           <Typography paragraph>
             {props.children}

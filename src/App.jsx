@@ -15,7 +15,6 @@ function App() {
 
   return(
       <Container sx={{ 
-        border: 'solid 1px #ADB5BD',
         maxnWidth: "lg",
         minHeight: "100vh",
        }}>

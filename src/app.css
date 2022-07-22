@@ -6,6 +6,16 @@ body {
 .collab-card {
     width: 500px;
 }
+::-webkit-scrollbar {
+    width: 13px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ADB5BD;
+    border-radius: 20px;    
+    padding-right: 20px;
+}
 
 @media (max-width: 1150px) {
     .collab-card {

@@ -31,7 +31,7 @@ function BasicCard(props) {
           <Card sx={{ 
                 maxWidth: "sm", 
                 marginTop: 3,
-                backgroundColor: "text.disabled"
+                backgroundColor: "#0A1929"                
               }}>
             <CardContent>
               <Typography sx={{ fontSize: 14, fontWeight: 500 }} color="#ADB5BD" gutterBottom>
@@ -43,7 +43,7 @@ function BasicCard(props) {
               <Typography sx={{ mb: 1.5, mt:1 }} color="#ADB5BD">
                 <LinearWithValueLabel value={course.progress}/>
               </Typography> 
-              <Typography variant="body2" color="#F3F6F9">
+              <Typography variant="body2" fontWeight={500} color="#F3F6F9">
               último acesso  |  {dateConverter(course.lastAccessTime)}
               </Typography>
             </CardContent>
