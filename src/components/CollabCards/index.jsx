@@ -15,6 +15,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import '../../app.css'
+import { colors } from '@mui/material';
+
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -53,14 +55,18 @@ export default function CollabCard(props) {
     <Card className='collab-card'>
       <CardHeader
         avatar={
-          <Avatar sx={{ width: 70, height: 70 }} style={{objectFit: "fill"}} aria-label="userPhoto">
-            <img src={userInfos.avatar_url} 
-            style={{ width: 70, height: 70 }}
-            />
+          <Avatar className='avatar' src={userInfos.avatar_url} sx={{ 
+              width: 70,
+              height: 70,
+            }} aria-label="userPhoto">
           </Avatar>
         }
-        title ={userInfos.name}
-        subheader= {`@${userInfos.login}`}
+        title ={
+          <Typography fontWeight={500} >{userInfos.name}</Typography>
+        }
+        subheader= {
+          <Typography fontWeight={400} color="text.secondary" >{`@${userInfos.login}`}</Typography>
+        }
       />
       <CardContent  >
         <Typography variant="body2" fontWeight={500} color="text.secondary">
@@ -68,7 +74,9 @@ export default function CollabCard(props) {
         </Typography>
       </CardContent>
       <CardActions disableSpacing sx={{ display: 'flex', justifyContent: 'space-between' }} >
-        <IconButton aria-label="GitHub" title="Visitar perfil" href={userInfos.html_url} target="_blank" style={{color:"#ccc"}} >
+        <IconButton aria-label="GitHub" title="Visitar perfil" href={userInfos.html_url} target="_blank" stylesx={{
+          backgroundColor: "text.secondary",
+        }} >
           <GitHubIcon/>         
         </IconButton>
         <CardContent style={{padding:"0"}} sx={{

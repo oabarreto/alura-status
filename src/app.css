@@ -6,6 +6,12 @@ body {
 .collab-card {
     width: 500px;
 }
+
+.avatar {
+    box-shadow: 0 0 8px rgb(81, 227, 79);
+    filter: drop-shadow(0 0.4rem 0.4rem #0000002f);
+}
+
 ::-webkit-scrollbar {
     width: 13px;
 
