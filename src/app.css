@@ -1,10 +1,14 @@
 body {
     background-color: #0A1929;
 }
-
+.color {
+    background-color: red;
+}
 
 .collab-card {
     width: 500px;
+    filter: drop-shadow(0 0.4rem 0.4rem #0000002f);
+    padding-right: 5px;
 }
 
 .avatar {
@@ -13,14 +17,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 13px;
+    width: 6px;
 
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ADB5BD;
-    border-radius: 20px;    
-    padding-right: 20px;
+    background-color: #1976d2;
+    border-radius: 20px;
 }
 
 @media (max-width: 1150px) {

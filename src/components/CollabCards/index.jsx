@@ -52,7 +52,9 @@ export default function CollabCard(props) {
     getUser() 
 
   return (
-    <Card className='collab-card'>
+    <Card sx={{
+      backgroundColor: '#e5e5e5'
+    }} className='collab-card'>
       <CardHeader
         avatar={
           <Avatar className='avatar' src={userInfos.avatar_url} sx={{ 
@@ -77,7 +79,9 @@ export default function CollabCard(props) {
         <IconButton aria-label="GitHub" title="Visitar perfil" href={userInfos.html_url} target="_blank" stylesx={{
           backgroundColor: "text.secondary",
         }} >
-          <GitHubIcon/>         
+          <GitHubIcon sx={{  '&:hover': {
+            color: "text.primary",
+          }}} />         
         </IconButton>
         <CardContent style={{padding:"0"}} sx={{
             display: 'flex',

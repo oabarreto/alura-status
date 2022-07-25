@@ -9,7 +9,7 @@ function Title() {
   return (
     <>
     <Typography variant="h2" component="h1" mt={3} fontWeight={700} color="#F3F6F9">Alura Status</Typography>
-    <Typography variant="h6" component="h2"  fontWeight={400} color="#ADB5BD">Meu progresso nos cursos e trilhas</Typography>   
+    <Typography variant="h6" component="h2"  fontWeight={400} color="#ADB5BD">Progressos nos cursos e trilhas</Typography>   
     </>
   )
 }
