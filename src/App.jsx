@@ -11,11 +11,25 @@ import './app.css'
 
 
 import Status from "./components/pages/Status"
-
 import Documentation from"./components/pages/Documentation"
-
+import {useRef} from"react"
 function App() { 
+  const statusRef = useRef()
+  const documentationRef = useRef()
 
+  const handleClick = e => {
+    const status = statusRef.current
+    const documentation = documentationRef.current
+
+    if(status === e.target) {
+     status.classList.toggle("color")
+     documentation.classList.toggle("color")
+
+    } else {
+      status.classList.toggle("color")
+      documentation.classList.toggle("color")
+    }
+  }
   return(
       <Container sx={{ 
         maxnWidth: "lg",
@@ -27,17 +41,17 @@ function App() {
         <Stack mt={3} spacing={1} direction="row">
           <Link style={{ 
             textDecoration: "none",
-          }} to="/">
+          }} to="/" className='color' ref={statusRef} onClick={handleClick}>
             <Button id="status" sx={{
               color: "#e5e5e5"
             }} startIcon={<ShowChartOutlinedIcon/>} variant="outlined" >Status</Button>
           </Link>
           <Link style={{ 
             textDecoration: "none",
-          }} to="documentacao">
+          }} to="documentacao" ref={documentationRef} onClick={handleClick}>
             <Button id="doc" sx={{
               color: "#e5e5e5",
-            }} startIcon={<ArticleOutlinedIcon />} variant="outlined">Documentação</Button>
+            }} startIcon={<ArticleOutlinedIcon />} variant="outlined" >Documentação</Button>
           </Link>
         </Stack>
       </nav>
