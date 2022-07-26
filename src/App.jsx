@@ -16,20 +16,28 @@ import {useRef} from"react"
 function App() { 
   const statusRef = useRef()
   const documentationRef = useRef()
-
+ 
   const handleClick = e => {
     const status = statusRef.current
     const documentation = documentationRef.current
+    
+    if(e.target === status) {
+      status.classList.add("btn-active-navigation")
+      status.classList.remove("btn-inative-navigation")
 
-    if(status === e.target) {
-     status.classList.toggle("color")
-     documentation.classList.toggle("color")
+      documentation.classList.remove("btn-active-navigation")
+      documentation.classList.add("btn-inative-navigation")
 
     } else {
-      status.classList.toggle("color")
-      documentation.classList.toggle("color")
+      status.classList.remove("btn-active-navigation")
+      status.classList.add("btn-inative-navigation")
+
+      documentation.classList.add("btn-active-navigation")
+      documentation.classList.remove("btn-inative-navigation")
     }
+
   }
+ 
   return(
       <Container sx={{ 
         maxnWidth: "lg",
@@ -41,17 +49,13 @@ function App() {
         <Stack mt={3} spacing={1} direction="row">
           <Link style={{ 
             textDecoration: "none",
-          }} to="/" className='color' ref={statusRef} onClick={handleClick}>
-            <Button id="status" sx={{
-              color: "#e5e5e5"
-            }} startIcon={<ShowChartOutlinedIcon/>} variant="outlined" >Status</Button>
+          }} to="/" className="btn-active-navigation btn-default-navigation" ref={statusRef} onClick={handleClick}>
+             Status
           </Link>
           <Link style={{ 
             textDecoration: "none",
-          }} to="documentacao" ref={documentationRef} onClick={handleClick}>
-            <Button id="doc" sx={{
-              color: "#e5e5e5",
-            }} startIcon={<ArticleOutlinedIcon />} variant="outlined" >Documentação</Button>
+          }} to="documentacao" className="btn-inative-navigation btn-default-navigation" ref={documentationRef} onClick={handleClick}>
+            Documentação
           </Link>
         </Stack>
       </nav>
