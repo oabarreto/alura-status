@@ -5,27 +5,28 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Title from '../../Title';
 import { Container, Box } from '@mui/material';
-import '../../../app.css'
+import '../../../styles/global.css'
+import '../../../styles/responsive.css'
 import CollabCard from '../../CollabCards';
-import BasicCard from"../../BasicCard"
+import CourseCard from"../../CourseCards"
 
 export default function Status() {
   const env = import.meta.env;
   return (
-    <Container className='container' style={{
+    <Container className='container' sx={{
         display: "flex", 
         justifyContent: "space-between" , 
         marginTop: "50px", 
         paddingBottom: "50px"
      }} >
         <Box className='card-container'>
-          <CollabCard name="thalya-codes" role="Estagiária" >
-            <BasicCard token={env.VITE_TOKEN_TH} key={1} className='collab_card'/>
+          <CollabCard name="thalya-codes" role="Estagiária" className="card-status">
+            <CourseCard token={env.VITE_TOKEN_TH} key={1} className='card-status__basic'/>
           </CollabCard>
         </Box>
         <Box  >
           <CollabCard name="oabarreto" role="Estagiário">
-            <BasicCard token={env.VITE_TOKEN_OT} key={2} />
+            <CourseCard token={env.VITE_TOKEN_OT} key={2} />
           </CollabCard>
         </Box>         
      </Container>

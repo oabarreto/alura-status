@@ -14,7 +14,10 @@ import { red } from '@mui/material/colors';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import '../../app.css'
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
+import '../../styles/responsive.css'
+import '../../styles/global.css'
 import { colors } from '@mui/material';
 
 
@@ -53,7 +56,7 @@ export default function CollabCard(props) {
 
   return (
     <Card sx={{
-      backgroundColor: '#e5e5e5'
+      backgroundColor: '#ADB5BD',
     }} className='collab-card'>
       <CardHeader
         avatar={

@@ -47,8 +47,7 @@ export default function LinearWithValueLabel(props) {
     <Box sx={{ width: '100%' }}>
       <LinearProgressWithLabel value={props.value} sx={{
         height: 8,
-        borderRadius: 1,
-        backgroundColor: "#F3F6F9",
+        backgroundColor: "#ADB5BD",
       }}/>
     </Box>
   );
