@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from 'react'
 import { Card, CardContent, CardActions, Typography, Box, CircularProgress } from '@mui/material';
 import LinearWithValueLabel from '../LinearProgressWithLabel';
+import '../../styles/responsive.css';
 
 function CourseCard(props) {
   
