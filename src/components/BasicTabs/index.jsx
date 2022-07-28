@@ -12,7 +12,8 @@ import { FaReact, FaGitAlt } from 'react-icons/fa';
 import { SiMaterialui, SiReactrouter, SiCss3 } from 'react-icons/si';
 import Chip from '@mui/material/Chip';
 import Stack from '@mui/material/Stack';
-
+import ImgBeforeError from "../../img/before_error.png"
+import ImgAfterError from "../../img/after_error.png"
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -159,6 +160,12 @@ export default function BasicTabs() {
 
           <Typography sx={{fontSize: "14px", fontWeight: "500", marginLeft: "20px", color:"text.secondary"}}>Utilizar o componente Container para encapsular os dois cards;</Typography>
           <Typography sx={{fontSize: "14px", fontWeight: "500", marginLeft: "20px", marginBottom: "40px", color:"text.secondary"}}>Utilizar o componente BOX ou uma div para encapsular cada um dos cartões, evitando assim que ao expandir um, a altura do outro permaneça inalterada.</Typography>
+          
+          <Stack sx={{ marginLeft:"20px", marginBottom: "40px" }} direction="row" spacing={2}>
+            <img src={ImgBeforeError} alt="Antes do Erro" title="Antes do Erro" style={{ width: "47%",  borderRadius: "5px", filter: "drop-shadow(0 0.4rem 0.4rem #0000002f)"}}/>
+            <img  src={ImgAfterError}  alt="Depois do Erro" title="Depois do Erro" style={{ width: "47%", borderRadius: "5px", filter: "drop-shadow(0 0.4rem 0.4rem #0000002f)"}}/>
+          </Stack>
+
           <hr/>
 
       <Typography sx={{fontSize: "18px", fontWeight: "bold", marginTop: "40px", marginBottom: "10px"}} >#Estilo condicional página ativa</Typography>

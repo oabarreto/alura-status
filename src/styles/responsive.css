@@ -23,20 +23,28 @@
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 530px) {
     .collab-card {
-        width: 380px;
+        width: 400px;
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
     .collab-card {
         width: 330px;
+    }
+
+    .MuiTypography-root.MuiTypography-h5.css-12hdzlo-MuiTypography-root  {
+        font-size: 99%;
     }
 }
 
 @media (max-width: 365px) {
     .collab-card {
         width: 300px;
+    }
+
+    .MuiTypography-root.MuiTypography-h5.css-12hdzlo-MuiTypography-root  {
+        font-size: 85%;
     }
 }
