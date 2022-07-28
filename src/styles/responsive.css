@@ -1,0 +1,50 @@
+
+@media (max-width: 1150px) {
+    .collab-card {
+        width: 450px;
+    }
+}
+
+@media (max-width: 1020px){
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px
+    }
+
+    .collab-card {
+        width: 550px;
+    }
+}
+
+@media (max-width: 650px) {
+    .collab-card {
+        width: 450px;
+    }
+}
+
+@media (max-width: 530px) {
+    .collab-card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 460px) {
+    .collab-card {
+        width: 330px;
+    }
+
+    .MuiTypography-root.MuiTypography-h5.css-12hdzlo-MuiTypography-root  {
+        font-size: 99%;
+    }
+}
+
+@media (max-width: 365px) {
+    .collab-card {
+        width: 300px;
+    }
+
+    .MuiTypography-root.MuiTypography-h5.css-12hdzlo-MuiTypography-root  {
+        font-size: 85%;
+    }
+}

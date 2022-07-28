@@ -1,20 +1,48 @@
 body {
     background-color: #0A1929;
 }
-
+.btn-active-navigation {
+    background-color: red;
+}
+.btn-default-navigation {
+    text-decoration: none;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 6px 16px;
+    border-radius: 4px;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: #fff;
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%); 
+}
+.btn-inative-navigation {
+    background-color: #1976d2;
+}
 
 .collab-card {
     width: 500px;
+    filter: drop-shadow(0 0.4rem 0.4rem #0000002f);
+    padding-right: 5px;
 }
+
+.avatar {
+    box-shadow: 0 0 8px rgb(81, 227, 79);
+    filter: drop-shadow(0 0.4rem 0.4rem #0000002f);
+}
+
 ::-webkit-scrollbar {
-    width: 13px;
+    width: 6px;
 
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ADB5BD;
-    border-radius: 20px;    
-    padding-right: 20px;
+    background-color: #1976d2;
+    border-radius: 20px;
 }
 
 @media (max-width: 1150px) {
