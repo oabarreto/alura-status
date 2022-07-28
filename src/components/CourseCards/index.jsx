@@ -37,9 +37,12 @@ function CourseCard(props) {
               <Typography sx={{ fontSize: 14, fontWeight: 500 }} color="#ADB5BD" gutterBottom>
                 Curso
               </Typography>
-              <Typography variant="h5" component="div" fontWeight={500} color="#F3F6F9">
-                {course.name}
-              </Typography>
+              <Box sx={{ display: "flex", alignItems: "center", gap: "10px"}}>
+                <img style={{ height: "45px", backgroundColor: "rgba(229, 229, 229, 0.7)", padding: "4px", borderRadius: "5px"}} src={`https://caelum.github.io/gnarus-api-assets/alura/assets/api/cursos/${course.slug}.svg`}/>
+                <Typography variant="h5" component="div" fontWeight={500} color="#F3F6F9">
+                  {course.name}
+                </Typography>
+              </Box>
               <Typography sx={{ mb: 1.5, mt:1 }} color="#ADB5BD">
                 <LinearWithValueLabel value={course.progress}/>
               </Typography> 

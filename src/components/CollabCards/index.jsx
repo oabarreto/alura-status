@@ -56,7 +56,7 @@ export default function CollabCard(props) {
 
   return (
     <Card sx={{
-      backgroundColor: '#ADB5BD',
+      backgroundColor: '#e5e5e5',
     }} className='collab-card'>
       <CardHeader
         avatar={

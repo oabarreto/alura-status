@@ -5,7 +5,7 @@ import '@fontsource/roboto/700.css';
 import Title from './components/Title';
 import NavMenu from './components/NavMenu';
 import { Container, Stack, Button } from '@mui/material';
-import { Routes, Route } from"react-router-dom"
+import { Routes, Route } from "react-router-dom"
 import './styles/global.css'
 import './styles/responsive.css'
 import Status from "./components/pages/Status"
