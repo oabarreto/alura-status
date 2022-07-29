@@ -10,6 +10,7 @@ import './styles/global.css'
 import './styles/responsive.css'
 import Status from "./components/pages/Status"
 import Documentation from"./components/pages/Documentation"
+import Teste from './components/teste/teste';
 function App() { 
  
  
@@ -25,7 +26,6 @@ function App() {
           <Route path="/" element={<Status />}/>    
           <Route path="/documentacao" element={<Documentation />}/>   
         </Routes> 
-   
       </Container>
     
   )
